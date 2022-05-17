@@ -1,4 +1,4 @@
-import { Flex, Text, Image, FlexProps } from "@chakra-ui/react";
+import { Flex, Text, Image, FlexProps, Drawer, useDisclosure, Box, Button, DrawerBody, DrawerCloseButton, DrawerContent, DrawerFooter, DrawerHeader, DrawerOverlay, FormLabel, Input, InputGroup, InputLeftAddon, InputRightAddon, Select, Stack, Textarea } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { AiOutlineArrowRight, AiOutlinePhone } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
@@ -31,6 +31,7 @@ const items = [
 ]
 
 export default function Header() {
+    const { isOpen, onClose, onOpen } = useDisclosure()
     const MotionFlex = motion<FlexProps>(Flex);
     const hoverMotion = {
         hover: {
@@ -47,24 +48,26 @@ export default function Header() {
     const history = useHistory()
     return (
         <Flex
-            p='0px 50px 0px 0px'
+            p={{ base: '0px 10px 0px 0px', md: '0px 50px 0px 0px' }}
             alignItems={'center'}
-            border='1px solid'
             h='100px'
             fontSize={'16px'}
             justifyContent='space-between'
             fontWeight={'600'}
-            bgColor={{ base: 'black', lg: 'white' }}
+            bgColor={{ base: 'rgba(24,24,24, 1)', lg: 'white' }}
         >
-            <Flex fontSize='25px'
+            <Flex
+                fontSize='25px'
                 display={{ base: 'inherit', lg: 'none' }}
                 ml='20px'
                 color={'white'}
+                cursor='pointer'
+                onClick={() => onOpen()}
             >
                 <GiHamburgerMenu />
             </Flex>
 
-            <Flex display={{ base: 'inherit', lg: 'none' }}>
+            <Flex display={{ base: 'inherit', lg: 'none' }} >
                 <Logo />
             </Flex>
 
@@ -126,6 +129,34 @@ export default function Header() {
                     borderRadius={"9999px"}
                 />
             </MotionFlex>
-        </Flex>
+            <Drawer
+                onClose={onClose}
+                isOpen={isOpen}
+                placement={'left'}
+            >
+                <DrawerContent bgColor={'rgba(24,24,24, 1)'}>
+                    <DrawerCloseButton color={'white'} />
+                    <DrawerBody>
+                        <Flex my={'50px'}>
+                            <Logo />
+                        </Flex>
+                        {items.map((item, id) => (
+                            <Flex
+                                key={id}
+                                onClick={() => history.push(item.link)}
+                                cursor='pointer'
+                                color={'white'}
+                                my='20px'
+                                lineHeight={'25px'}
+                            >
+                                <HoverMotion>
+                                    {item.title}
+                                </HoverMotion>
+                            </Flex>
+                        ))}
+                    </DrawerBody>
+                </DrawerContent>
+            </Drawer>
+        </Flex >
     )
 }
