@@ -1,10 +1,11 @@
 import { Flex, Text, Image, FlexProps } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { AiOutlineArrowRight, AiOutlinePhone } from "react-icons/ai";
 import { useHistory } from "react-router-dom";
 import { whatsapp_data } from "../../../utils/whatsapp_data";
 import HoverMotion from "../../HoverMotion";
 import Logo from "../../Logo";
+import { GiHamburgerMenu } from 'react-icons/gi'
 
 const items = [
     {
@@ -53,8 +54,21 @@ export default function Header() {
             fontSize={'16px'}
             justifyContent='space-between'
             fontWeight={'600'}
+            bgColor={{ base: 'black', lg: 'white' }}
         >
-            <Flex>
+            <Flex fontSize='25px'
+                display={{ base: 'inherit', lg: 'none' }}
+                ml='20px'
+                color={'white'}
+            >
+                <GiHamburgerMenu />
+            </Flex>
+
+            <Flex display={{ base: 'inherit', lg: 'none' }}>
+                <Logo />
+            </Flex>
+
+            <Flex display={{ base: 'none', lg: 'inherit' }}>
                 <Flex
                     h='25px'
                     bgColor={'black'}
@@ -62,7 +76,7 @@ export default function Header() {
                 />
                 <Logo light />
             </Flex>
-            <Flex justifyContent={'space-between'} w='40%'>
+            <Flex justifyContent={'space-between'} w='40%' display={{ base: 'none', lg: 'inherit' }}>
                 {items.map((item, id) => (
                     <Flex
                         key={id}
@@ -75,23 +89,34 @@ export default function Header() {
                     </Flex>
                 ))}
             </Flex>
-            <MotionFlex direction={"column"} animate={"hover"}>
+            <MotionFlex direction={"column"} animate={"hover"} color={{ base: 'white', lg: 'black' }}>
                 <Flex
                     alignItems={'center'}
                     fontSize='18px'
                     letterSpacing={'4px'}
-                    gridGap='5px'
                     cursor='pointer'
                     onClick={() => {
                         window.open(whatsapp_data.phone)
                     }}
+                    display={{ base: 'none', md: 'inherit' }}
                 >
                     <Text>
                         Get in touch
                     </Text>
                     <AiOutlineArrowRight />
                 </Flex>
-
+                <Flex
+                    alignItems={'center'}
+                    fontSize='25px'
+                    letterSpacing={'4px'}
+                    cursor='pointer'
+                    onClick={() => {
+                        window.open(whatsapp_data.phone)
+                    }}
+                    display={{ base: 'inherit', md: 'none' }}
+                >
+                    <AiOutlinePhone />
+                </Flex>
                 <MotionFlex
                     h="2.5px"
                     width={'0%'}

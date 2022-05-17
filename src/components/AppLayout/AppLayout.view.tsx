@@ -8,7 +8,7 @@ export default function AppLayoutView() {
     const { children } = useAppLayoutContext();
     return (
         <>
-            <Flex direction={'column'} fontFamily='Space Grotesk'  >
+            <Flex direction={'column'} fontFamily='Space Grotesk' overflowX={'hidden'} >
                 <Header />
                 {children}
                 <Footer />
