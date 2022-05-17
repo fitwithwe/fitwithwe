@@ -1,0 +1,34 @@
+import { Flex, Text } from "@chakra-ui/react";
+import { BsDot } from 'react-icons/bs'
+
+export default function MovingLine() {
+    const line = "MAKE REAL RESULTS HAPPEN. MORE THAN WORKOUT"
+    return (
+        <Flex
+            h='60px'
+            border={'1px solid #181818'}
+            alignItems='center'
+            overflowX={'hidden'}
+            wrap={'nowrap'}
+            flexWrap='nowrap'
+            letterSpacing={'2px'}
+            fontSize='18px'
+        >
+            <Flex minW='100vw'>
+                <marquee>
+                    <Flex alignItems={'center'}>
+                        {Array.from({ length: 100 }, x => (
+                            <Flex alignItems={'center'} w='600px'>
+                                <Text>{line}</Text>
+                                <Flex fontSize={'30px'} color='rgb(51,167,181)'>
+                                    <BsDot />
+                                </Flex>
+                            </Flex>
+                        ))}
+                    </Flex>
+
+                </marquee>
+            </Flex>
+        </Flex>
+    )
+}

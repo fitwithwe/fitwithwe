@@ -74,7 +74,7 @@ export default function Header() {
             <Flex display={{ base: 'none', lg: 'inherit' }}>
                 <Flex
                     h='25px'
-                    bgColor={'black'}
+                    bgColor={'rgba(24,24,24, 1)'}
                     w={'80px'}
                 />
                 <Logo light />

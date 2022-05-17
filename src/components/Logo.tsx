@@ -4,7 +4,7 @@ export default function Logo({ light = false }) {
     return (
         <Flex direction={'column'} letterSpacing='5px' fontWeight={'bold'} fontSize='20pt' lineHeight={'25px'}>
             <Flex>
-                <Text bgColor={light ? 'black' : 'white'} color={light?'white':'black'}>
+                <Text bgColor={light ? 'rgba(24,24,24, 1)' : 'white'} color={light ? 'white' : 'rgba(24,24,24, 1)'}>
                     FitWith
                 </Text>
                 <Text bgColor={light ? 'black' : 'white'} color='rgb(51,167,181)' fontSize='20pt' >
@@ -12,7 +12,7 @@ export default function Logo({ light = false }) {
                 </Text>
             </Flex>
             <Flex>
-                <Text color={light ? 'black' : 'white'}>
+                <Text color={light ? 'rgba(24,24,24, 1)' : 'white'}>
                     We
                 </Text>
             </Flex>
