@@ -83,7 +83,7 @@ export default function Header() {
                     gridGap='5px'
                     cursor='pointer'
                     onClick={() => {
-                        window.open(whatsapp_data.number)
+                        window.open(whatsapp_data.phone)
                     }}
                 >
                     <Text>
