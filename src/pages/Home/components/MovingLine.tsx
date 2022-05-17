@@ -1,6 +1,14 @@
 import { Flex, Text } from "@chakra-ui/react";
 import { BsDot } from 'react-icons/bs'
 
+declare global {
+    namespace JSX {
+      interface IntrinsicElements {
+        marquee: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+      }
+    }
+  }
+
 export default function MovingLine() {
     const line = "MAKE REAL RESULTS HAPPEN. MORE THAN WORKOUT"
     return (
