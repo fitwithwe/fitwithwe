@@ -2,23 +2,24 @@ import { Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import Logo from "../../Logo";
 import { FaFacebookF } from 'react-icons/fa'
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
-
-const icon = [
-    {
-        img: FaFacebookF,
-        link: ''
-    },
-    {
-        img: AiOutlineInstagram,
-        link: 'https://www.instagram.com/fitwith.we/?hl=en'
-    },
-    {
-        img: AiOutlineWhatsApp,
-        link: 'https://api.whatsapp.com/send?phone=6395611002'
-    }
-]
+import { whatsapp_data } from "../../../utils/whatsapp_data";
 
 export default function Footer() {
+    const icon = [
+        {
+            img: FaFacebookF,
+            link: ''
+        },
+        {
+            img: AiOutlineInstagram,
+            link: 'https://www.instagram.com/fitwith.we/?hl=en'
+        },
+        {
+            img: AiOutlineWhatsApp,
+            link: whatsapp_data.number
+        }
+    ]
+
     return (
         <Flex
             bgColor={'#181818'}
