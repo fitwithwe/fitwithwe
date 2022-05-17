@@ -10,11 +10,11 @@ const icon = [
     },
     {
         img: AiOutlineInstagram,
-        link: ''
+        link: 'https://www.instagram.com/fitwith.we/?hl=en'
     },
     {
         img: AiOutlineWhatsApp,
-        link: ''
+        link: 'https://api.whatsapp.com/send?phone=6395611002'
     }
 ]
 
@@ -127,8 +127,8 @@ export default function Footer() {
                                     fontWeight='600'
                                     color={'#A3A3A3'}
                                 > WE ARE HERE</Text>
-                                <Text>27 Division St, New York,
-                                    <br />    NY 10002, USA
+                                <Text>320/A, GURUDWARA ROAD<br />
+                                    SAHARANPUR
                                 </Text>
                             </Flex>
                         </GridItem>
@@ -145,7 +145,7 @@ export default function Footer() {
                                     color={'#A3A3A3'}
                                 > CALL US
                                 </Text>
-                                <Text>9999999999</Text>
+                                <Text>+91 6395611002</Text>
                             </Flex>
                         </GridItem>
                     </Grid>
