@@ -143,7 +143,10 @@ export default function Header() {
                         {items.map((item, id) => (
                             <Flex
                                 key={id}
-                                onClick={() => history.push(item.link)}
+                                onClick={() => {
+                                    history.push(item.link)
+                                    onClose()
+                                }}
                                 cursor='pointer'
                                 color={'white'}
                                 my='20px'
