@@ -1,17 +1,20 @@
 
 import React from "react";
+import { AppLayout } from "../../components/AppLayout";
 import HomeView from "./Home.view";
 import { HomeContext } from "./utils/context";
 
 export default function HomeContainer() {
     const [count, setCount] = React.useState(1);
     return (
-    <HomeContext.Provider
-        value={{
-        count: count,
-        }}
-    >
-        <HomeView />
-    </HomeContext.Provider>
+        <AppLayout>
+            <HomeContext.Provider
+                value={{
+                    count: count,
+                }}
+            >
+                <HomeView />
+            </HomeContext.Provider>
+        </AppLayout>
     );
 }
