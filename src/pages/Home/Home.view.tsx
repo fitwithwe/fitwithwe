@@ -1,9 +1,9 @@
 
-import { Flex, Image } from "@chakra-ui/react";
-import React from "react";
+import { Flex, Image, Stat } from "@chakra-ui/react";
 import Banner from "./components/Banner";
 import Motivation from "./components/Motivation";
 import MovingLine from "./components/MovingLine";
+import Stats from "./components/Stats";
 import { useHomeContext } from "./utils/context";
 
 export default function HomeView() {
@@ -12,6 +12,7 @@ export default function HomeView() {
         <Flex direction={'column'}>
             <Banner />
             <Motivation />
+            <Stats/>
             <MovingLine />
         </Flex>
     );
