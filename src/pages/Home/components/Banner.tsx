@@ -27,7 +27,7 @@ export default function Banner() {
                 <Flex
                     fontSize={{ base: '20px', sm: '40px', md: '60px', lg: '80px' }}
                 >
-                    NO matter your<br /> fitness level.
+                    No matter your<br /> fitness level.
                 </Flex>
             </Flex>
             <Flex
