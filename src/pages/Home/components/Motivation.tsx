@@ -1,4 +1,5 @@
 import { Flex, Text, Image, Grid, GridItem } from "@chakra-ui/react";
+import HoverMotion from "../../../components/HoverMotion";
 
 const items = [
     {
@@ -50,15 +51,16 @@ export default function Motivation() {
                         >
                             {row.num}
                         </Flex>
-                        <Flex
-                            fontWeight={'500'}
-                            lineHeight={1.5}
-                            fontSize={{ base: '18px', md: '20px', lg: '25px' }}
-                            mb={'7px'}
-                        >
-                            {row.title}
-                        </Flex>
-
+                        <HoverMotion>
+                            <Flex
+                                fontWeight={'500'}
+                                lineHeight={1.5}
+                                fontSize={{ base: '18px', md: '20px', lg: '25px' }}
+                                mb={'7px'}
+                            >
+                                {row.title}
+                            </Flex>
+                        </HoverMotion>
                         <Flex
                             mb={'20px'}
                             fontSize={{ base: '12px', md: '14px', lg: '16px' }}
