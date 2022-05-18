@@ -28,16 +28,31 @@ export default function Motivation() {
         >
             <Grid
                 templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(2, 1fr)', xl: 'repeat(3, 1fr)' }}
-                w={{base:'95%',sm:'90%',md:'85%',lg:'80%'}}
-                justifyContent='center'
-                alignContent={'center'}
+                w={{ base: '95%', sm: '90%', md: '85%', lg: '80%' }}
             >
                 {items.map((row, id) => (
                     <GridItem
                         key={id}
                         p={{ base: '10px', sm: '20px', md: '40px', lg: '60px' }}
                         position={'relative'}
+                        transition='0.5s ease-out'
+                        _hover={{
+                            transform: 'scale(1.1)',
+                            transition: '0.5s ease-in',
+                        }}
+                        cursor={'crosshair'}
                     >
+                        <Flex
+                            position={'absolute'}
+                            fontSize={{ base: '20px', sm: '30px', md: '50px', lg: '70px' }}
+                            opacity={0.3}
+                            top={0}
+                            left={0}
+                            color='white'
+                            textShadow={'1px 1px 3px #090909'}
+                        >
+                            {row.num}
+                        </Flex>
                         <Flex
                             fontWeight={'500'}
                             lineHeight={1.5}
@@ -52,15 +67,6 @@ export default function Motivation() {
                             fontSize={{ base: '12px', md: '14px', lg: '16px' }}
                         >
                             {row.desc}
-                        </Flex>
-                        <Flex
-                            position={'absolute'}
-                            fontSize={{ base: '20px', sm: '30px', md: '50px', lg: '70px' }}
-                            opacity={0.3}
-                            top={0}
-                            left={0}
-                        >
-                            {row.num}
                         </Flex>
                     </GridItem>
                 ))}
