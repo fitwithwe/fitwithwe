@@ -1,8 +1,34 @@
 import { ArrowBackIcon, ArrowForwardIcon } from "@chakra-ui/icons";
 import { Flex, Text, Image } from "@chakra-ui/react";
+import React from "react";
 import { BsArrowLeft, BsArrowRight, BsFillPersonFill } from "react-icons/bs";
 
+const items = {
+    1: {
+        name: 'Loreum Ipsum 1',
+        msg: 'Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.'
+    },
+    2: {
+        name: 'Loreum Ipsum 2',
+        msg: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+    },
+    3: {
+        name: 'Loreum Ipsum 3',
+        msg: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters'
+    }
+}
+
 export default function Testimonial() {
+    const length = 3
+    const [itemNum, setItemNum] = React.useState(1)
+    const next = () => {
+        if (itemNum + 1 <= length)
+            setItemNum(itemNum + 1)
+    }
+    const prev = () => {
+        if (itemNum - 1 > 0)
+            setItemNum(itemNum - 1)
+    }
     return (
         <Flex w='100%' direction={'column'} maxH='80vh' overflow={'hidden'} position='relative'>
             <Flex w='100%' display={{ base: 'none', md: 'inherit' }}>
@@ -21,7 +47,7 @@ export default function Testimonial() {
                 justifyContent='space-between'
                 alignItems='center'
                 px='20px'
-                py={{base:'80px',md:'100px'}}
+                py={{ base: '80px', md: '100px' }}
                 gridGap={'20px'}
             >
                 <Flex
@@ -36,7 +62,7 @@ export default function Testimonial() {
                         WebkitTextStroke: '1px white'
                     }}
                 >
-                    {'"'}
+                    {'“'}
                 </Flex>
                 <Flex
                     fontWeight={'100'}
@@ -48,6 +74,7 @@ export default function Testimonial() {
                         color: '#3c8599',
                         transition: '0.2s ease-in'
                     }}
+                    onClick={() => prev()}
                 >
                     <BsArrowLeft />
                 </Flex>
@@ -59,7 +86,7 @@ export default function Testimonial() {
                     <Text
                         w={{ base: '200px', sm: '300px', md: '400px', lg: '500px' }}
                     >
-                        “Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.”
+                        {`“${items[itemNum].msg}"`}
                     </Text>
                     <Flex
                         mt={'30px'}
@@ -78,7 +105,7 @@ export default function Testimonial() {
                             <Text
                                 fontSize={{ base: '14px', sm: '16px', md: '18px', lg: '20px' }}
                             >
-                                Linda Anderson
+                                {items[itemNum].name}
                             </Text>
                             <Text
                                 letterSpacing={'4px'}
@@ -101,6 +128,7 @@ export default function Testimonial() {
                         color: '#3c8599',
                         transition: '0.2s ease-in'
                     }}
+                    onClick={() => next()}
                 >
                     <BsArrowRight />
                 </Flex>
