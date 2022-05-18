@@ -48,14 +48,14 @@ export default function Stats() {
                             gridColumnGap={'10px'}
                         >
                             <Text
-                                fontSize={'72px'}
+                                fontSize={{ base: '50px', md: '72px' }}
                             >
                                 {row.ans}
                             </Text>
                             <Text
                                 fontWeight={'normal'}
                                 m={{ base: '0 2px 0 4px', lg: '0 4px 0 16px' }}
-                                fontSize={'18px'}
+                                fontSize={{ base: '15px', md: '18px' }}
                                 dangerouslySetInnerHTML={{ __html: row.title }}
                                 lineHeight={1.5}
                             />
@@ -66,7 +66,7 @@ export default function Stats() {
                             opacity={0.3}
                             left={'20%'}
                             color='transparent'
-                            fontSize={'200px'}
+                            fontSize={{ base: '130px', md: '200px' }}
                             lineHeight={0}
                             style={{
                                 WebkitTextStroke: '1px white'
