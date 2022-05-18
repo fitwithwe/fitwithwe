@@ -35,11 +35,6 @@ export default function Motivation() {
                         key={id}
                         p={{ base: '10px', sm: '20px', md: '40px', lg: '60px' }}
                         position={'relative'}
-                        transition='0.5s ease-out'
-                        _hover={{
-                            transform: 'scale(1.1)',
-                            transition: '0.5s ease-in',
-                        }}
                         cursor={'crosshair'}
                     >
                         <Flex
@@ -65,6 +60,7 @@ export default function Motivation() {
                         <Flex
                             mb={'20px'}
                             fontSize={{ base: '12px', md: '14px', lg: '16px' }}
+                            letterSpacing={'2px'}
                         >
                             {row.desc}
                         </Flex>
