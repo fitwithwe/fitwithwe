@@ -23,12 +23,11 @@ export default function Motivation() {
         <Flex
             bgColor={'white'}
             justifyContent={'center'}
-            py={{ base: '20pt', sm: '40pt', md: '60pt', lg: '80pt' }}
+            py={{ base: '10pt', sm: '20pt', md: '30pt', lg: '40pt' }}
             alignItems={'center'}
         >
             <Grid
                 templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', lg: 'repeat(2, 1fr)', xl: 'repeat(3, 1fr)' }}
-                gap='50px'
                 w={{base:'95%',sm:'90%',md:'85%',lg:'80%'}}
                 justifyContent='center'
                 alignContent={'center'}
