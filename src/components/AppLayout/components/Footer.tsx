@@ -173,7 +173,7 @@ export default function Footer() {
                     Terms of Use
                 </Text>
                 <Text display={{ base: 'none', sm: 'inherit' }}>
-                    Copyright © 2022 Zium by FitWith.WE. All Rights Reserved.
+                    Copyright © 2022 FitWith.We. All Rights Reserved.
                 </Text>
             </Flex>
             <Flex >
