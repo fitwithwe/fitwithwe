@@ -44,7 +44,9 @@ export default function Motivation() {
                             top={0}
                             left={0}
                             color='white'
-                            textShadow={'1px 1px 3px #090909'}
+                            style={{
+                                WebkitTextStroke: '1px gray'
+                            }}
                         >
                             {row.num}
                         </Flex>
