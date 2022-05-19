@@ -14,7 +14,7 @@ const items = [
     },
     {
         title: 'Free Help',
-        link: '/pricing'
+        link: '/freeplan'
     },
     {
         title: 'Pricing',
@@ -22,7 +22,7 @@ const items = [
     },
     {
         title: 'Transformations',
-        link: '/Transformation'
+        link: '/transformation'
     },
     {
         title: 'About',

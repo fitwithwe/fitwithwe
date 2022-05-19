@@ -1,7 +1,9 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Flex, Image, Text } from "@chakra-ui/react";
+import { useHistory } from "react-router-dom";
 
 export default function Banner() {
+    const history = useHistory()
     return (
         <Flex position={'relative'}>
             <Flex w='65%' bgColor={'transparent'}>
@@ -39,11 +41,13 @@ export default function Banner() {
                 position={'absolute'}
                 cursor={'pointer'}
                 bgColor='#3c8599'
-                w={{ base: '140px', sm: '160px', md: '180px', lg: '200px' }}
+                w={{ base: '150px', sm: '170px', md: '190px', lg: '210px' }}
                 alignItems={'center'}
                 p={{ base: '6px', sm: '7px', md: '9px', lg: '10px' }}
                 letterSpacing={{ base: '1px', sm: '2px', md: '2px', lg: '2px' }}
-
+                onClick={()=>{
+                    history.push('/freeplan')
+                }}
                 justifyContent='center'
                 transition='0.3s ease-out'
                 _hover={{
@@ -52,7 +56,7 @@ export default function Banner() {
                     transition: '0.3s ease-in'
                 }}
             >
-                <Text mr={'5px'}>Get Started</Text> <ArrowForwardIcon />
+                <Text mr={'5px'}>Get Free Help</Text> <ArrowForwardIcon />
             </Flex>
         </Flex >
     )
