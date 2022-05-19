@@ -16,8 +16,24 @@ export default function ContactSection() {
             gridColumnGap='100px'
         >
             <Flex
+                position={'absolute'}
+                opacity={0.2}
+                fontSize={'15vw'}
+                top={{ base: '30%', md: '30%', lg: '40%' }}
+                color='transparent'
+                lineHeight={0}
+                style={{
+                    WebkitTextStroke: '1px gray'
+                }}
+                userSelect='none'
+                zIndex='1'
+            >
+                FitWith.We
+            </Flex>
+            <Flex
                 direction={'column'}
                 width={{ base: '100%', lg: '50%', xl: '40%' }}
+                zIndex={99}
             >
                 <Flex>
                     <Text
@@ -103,7 +119,7 @@ export default function ContactSection() {
                     </Flex>
                 </Flex>
             </Flex>
-            <Flex width={{ base: '100%', lg: '50%', xl: '40%' }}>
+            <Flex width={{ base: '100%', lg: '50%', xl: '40%' }} zIndex={99}>
                 <ContactBox />
             </Flex>
         </Flex>
