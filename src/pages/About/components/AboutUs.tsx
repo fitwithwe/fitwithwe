@@ -1,7 +1,9 @@
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { Flex, Text, Image } from "@chakra-ui/react";
+import { useHistory } from "react-router-dom";
 
 export default function AboutUs() {
+    const history = useHistory()
     return (
         <Flex
             direction={{ base: 'column', lg: 'row' }}
@@ -67,13 +69,13 @@ export default function AboutUs() {
                     alignItems={'center'}
                     p={{ base: '6px', sm: '7px', md: '9px', lg: '10px' }}
                     letterSpacing={{ base: '1px', sm: '2px', md: '2px', lg: '2px' }}
-
                     justifyContent='center'
                     transition='0.3s ease-out'
                     _hover={{
                         bgColor: 'black',
                         transition: '0.3s ease-in'
                     }}
+                    onClick={()=>history.push("/pricing")}
                 >
                     <Text mr={'5px'}>Become a member</Text> <ArrowForwardIcon />
                 </Flex>

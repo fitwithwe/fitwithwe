@@ -3,6 +3,7 @@ import { Flex } from "@chakra-ui/react";
 import PageHeader from "../../components/PageHeader";
 import Stats from "../../components/Stats";
 import MovingLine from "../Home/components/MovingLine";
+import AboutOffer from "./components/AboutOffer";
 import AboutUs from "./components/AboutUs";
 
 export default function AboutView() {
@@ -10,6 +11,7 @@ export default function AboutView() {
         <Flex w='100%' direction={'column'} bgImage={'url("/aboutbg.jpeg")'} bgAttachment='fixed' bgSize={'100% 100%'}>
             <PageHeader name="About us"/>
             <AboutUs/>
+            <AboutOffer/>
             <MovingLine/>
         </Flex>
     )
