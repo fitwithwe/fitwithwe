@@ -1,8 +1,10 @@
-import { Flex, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Flex, FlexProps, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import Logo from "../../Logo";
 import { FaFacebookF } from 'react-icons/fa'
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
 import { whatsapp_data } from "../../../utils/whatsapp_data";
+import HoverMotion from "../../HoverMotion";
+import { motion } from "framer-motion";
 
 export default function Footer() {
     const icon = [
@@ -19,7 +21,19 @@ export default function Footer() {
             link: whatsapp_data.number
         }
     ]
-
+    const MotionFlex = motion<FlexProps>(Flex);
+    const hoverMotion = {
+        hover: {
+            opacity: 1,
+            width: '95%',
+            transition: {
+                duration: 2,
+                type: "spring",
+                ease: "easeIn",
+                repeat: Infinity
+            },
+        },
+    };
     return (
         <Flex
             bgColor={'#181818'}
@@ -88,7 +102,7 @@ export default function Footer() {
                                         }}
                                         cursor='pointer'
                                         onClick={() => {
-                                            window.open(row.link)
+                                            window.open(row.link, "_self")
                                         }}
                                         mr='20px'
                                     >
@@ -152,6 +166,49 @@ export default function Footer() {
                     </Grid>
                 </Flex>
             </Flex>
+
+            <Flex
+                lineHeight={'1.75em'}
+                letterSpacing={'2px'}
+                mt={'20px'}
+                px={{ base: '15px', sm: '50px', md: '100px', lg: '130px', xl: '200px' }}
+                direction='column'
+                fontSize={{ base: '10px', sm: '11px', md: '12px', lg: '14px' }}
+            >
+                <Text
+                    letterSpacing={'7px'}
+                    fontWeight='600'
+                    color={'#A3A3A3'}
+                >
+                    WEBSITE BY
+                </Text>
+                <MotionFlex
+                    direction={"column"}
+                    animate={"hover"}
+                    w={{base:'150px',sm:'160px',md:'170px',lg:'180px'}}
+                >
+                    <Flex
+                        alignItems={'center'}
+                        letterSpacing={'4px'}
+                        cursor='pointer'
+                        onClick={() => {
+                            window.open("https://api.whatsapp.com/send?phone=+917579214173", "_self")
+                        }}
+                        gridGap='5px'
+                    >
+                        Nikhil Gupta <AiOutlineWhatsApp />
+                    </Flex>
+                    <MotionFlex
+                        h="2.5px"
+                        width={'0%'}
+                        bgColor={"currentcolor"}
+                        variants={hoverMotion}
+                        opacity="0"
+                        borderRadius={"9999px"}
+                    />
+                </MotionFlex>
+            </Flex>
+
             <Flex
                 h={{ base: '20pt', sm: '40pt', md: '60pt', lg: '80pt' }}
                 w='90%'

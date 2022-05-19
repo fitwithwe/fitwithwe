@@ -99,7 +99,7 @@ export default function Header() {
                     letterSpacing={'4px'}
                     cursor='pointer'
                     onClick={() => {
-                        window.open(whatsapp_data.phone)
+                        window.open(whatsapp_data.phone,"_self")
                     }}
                     display={{ base: 'none', md: 'inherit' }}
                 >
@@ -114,7 +114,7 @@ export default function Header() {
                     letterSpacing={'4px'}
                     cursor='pointer'
                     onClick={() => {
-                        window.open(whatsapp_data.phone)
+                        window.open(whatsapp_data.phone,"_self")
                     }}
                     display={{ base: 'inherit', md: 'none' }}
                 >
