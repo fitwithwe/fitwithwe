@@ -20,7 +20,7 @@ export default function TransformationView() {
             <Flex
                 bgColor={'white'}
                 justifyContent={'center'}
-                py={{ base: '50pt', sm: '60pt', md: '70pt', lg: '80pt' }}
+                py={{ base: '30pt', sm: '40pt', md: '50pt', lg: '60pt' }}
                 alignItems={'center'}
                 color='white'
                 fontWeight={'bold'}
@@ -28,6 +28,21 @@ export default function TransformationView() {
                 overflow={'hidden'}
                 position='relative'
             >
+                <Flex
+                    position={'absolute'}
+                    opacity={0.3}
+                    fontSize={'30vw'}
+                    top={{ base: '1%', md: '0%', lg:'5%',xl: '10%' }}
+                    color='transparent'
+                    lineHeight={0}
+                    style={{
+                        WebkitTextStroke: '1px gray'
+                    }}
+                    userSelect='none'
+                    zIndex='1'
+                >
+                    CHANGE
+                </Flex>
                 <Text
                     color={'white'}
                     bgColor={'#3c8599'}
