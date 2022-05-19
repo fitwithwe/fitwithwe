@@ -15,7 +15,7 @@ export default function Router() {
                     <Route exact path={"/about"} component={About} />
                     <Route exact path={"/contact"} component={Contact} />
                     <Route exact path={"/pricing"} component={Pricing} />
-                    <Route exact path={"/freeplan"} component={FreePlan} />
+                    <Route exact path={"/freehelp"} component={FreePlan} />
                     <Route exact path={"/transformation"} component={Transformation} />
                     <Route path={"*"}>
                         <Redirect to={"/home"} />

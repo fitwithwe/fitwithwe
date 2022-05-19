@@ -14,7 +14,7 @@ const items = [
     },
     {
         title: 'Free Help',
-        link: '/freeplan'
+        link: '/freehelp'
     },
     {
         title: 'Pricing',

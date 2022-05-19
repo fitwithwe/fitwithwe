@@ -46,7 +46,7 @@ export default function Banner() {
                 p={{ base: '6px', sm: '7px', md: '9px', lg: '10px' }}
                 letterSpacing={{ base: '1px', sm: '2px', md: '2px', lg: '2px' }}
                 onClick={()=>{
-                    history.push('/freeplan')
+                    history.push('/freehelp')
                 }}
                 justifyContent='center'
                 transition='0.3s ease-out'
