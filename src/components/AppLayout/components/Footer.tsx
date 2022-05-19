@@ -185,7 +185,7 @@ export default function Footer() {
                 <MotionFlex
                     direction={"column"}
                     animate={"hover"}
-                    w={{base:'150px',sm:'160px',md:'170px',lg:'180px'}}
+                    w={{base:'140px',sm:'140px',md:'150px',lg:'160px'}}
                 >
                     <Flex
                         alignItems={'center'}
