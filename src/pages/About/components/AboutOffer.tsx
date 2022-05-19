@@ -43,7 +43,7 @@ export default function AboutOffer() {
                     overflow={'hidden'}
                     justifyContent='center'
                 >
-                    <Image src='/website.png' />
+                    <Image src='/website.jpg' />
                 </Flex>
             </Flex>
 
@@ -92,7 +92,7 @@ export default function AboutOffer() {
                 display={{ base: 'none', lg: 'inherit' }}
             >
                 <Flex borderRadius='10px' overflow={'hidden'} justifyContent='center'>
-                    <Image src='/website.png' />
+                    <Image src='/website.jpg' />
                 </Flex>
             </Flex>
         </Flex>
