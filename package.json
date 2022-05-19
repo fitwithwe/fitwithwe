@@ -11,6 +11,7 @@
     "@chakra-ui/icons": "^1.0.15",
     "@chakra-ui/react": "1.6.10",
     "@chakra-ui/theme-tools": "^1.2.1",
+    "@emailjs/browser": "^3.6.2",
     "@emotion/react": "11",
     "@emotion/styled": "11",
     "@types/react-router-dom": "^5.3.3",

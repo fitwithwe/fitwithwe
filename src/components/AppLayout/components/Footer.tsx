@@ -2,25 +2,12 @@ import { Flex, FlexProps, Grid, GridItem, Image, Text } from "@chakra-ui/react";
 import Logo from "../../Logo";
 import { FaFacebookF } from 'react-icons/fa'
 import { AiOutlineInstagram, AiOutlineWhatsApp } from 'react-icons/ai'
-import { whatsapp_data } from "../../../utils/whatsapp_data";
+import { icon, whatsapp_data } from "../../../utils/whatsapp_data";
 import HoverMotion from "../../HoverMotion";
 import { motion } from "framer-motion";
 
 export default function Footer() {
-    const icon = [
-        {
-            img: FaFacebookF,
-            link: ''
-        },
-        {
-            img: AiOutlineInstagram,
-            link: 'https://www.instagram.com/fitwith.we/?hl=en'
-        },
-        {
-            img: AiOutlineWhatsApp,
-            link: whatsapp_data.number
-        }
-    ]
+   
     const MotionFlex = motion<FlexProps>(Flex);
     const hoverMotion = {
         hover: {
@@ -94,6 +81,7 @@ export default function Footer() {
                                         borderRadius='99px'
                                         justifyContent={'center'}
                                         alignItems='center'
+                                        transition={"0.3s ease-out"}
                                         bgColor={'#2E2E2E'}
                                         _hover={{
                                             bgColor: '#f5f3ed',
