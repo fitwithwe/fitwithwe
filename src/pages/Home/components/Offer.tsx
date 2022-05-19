@@ -3,6 +3,7 @@ import { GiGymBag } from "react-icons/gi";
 import { BiFoodMenu } from 'react-icons/bi'
 import { BsPeople } from 'react-icons/bs'
 import { MdOutlinePersonalVideo } from 'react-icons/md'
+import { useHistory } from "react-router-dom";
 
 const items = [
     {
@@ -28,6 +29,7 @@ const items = [
 ]
 
 export default function Offer() {
+    const history = useHistory()
     return (
         <Flex
             bgColor={'#181818'}
@@ -95,7 +97,8 @@ export default function Offer() {
                                 transition:'0.5s ease-in'
                             }}
                             p={'40px'}
-                            cursor='crosshair'
+                            cursor='pointer'
+                            onClick={()=>history.push('/about')}
                         >
                             <Flex
                                 fontSize={'48px'}
