@@ -77,6 +77,7 @@ export default function PricingView() {
                     letterSpacing={'8px'}
                     px={{ base: '1px', md: '2px' }}
                     fontSize={{ base: '10px', sm: '12px', md: '14px', lg: '16px' }}
+                    alignItems='center'
                 >
                     PRICING
                 </Text>
