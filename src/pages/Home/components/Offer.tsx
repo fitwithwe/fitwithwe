@@ -7,22 +7,22 @@ import { MdOutlinePersonalVideo } from 'react-icons/md'
 const items = [
     {
         title: 'Workout plan',
-        desc: 'Our expert trainers with over 150 hours of education will work with you to create a custom plan',
+        desc: 'Our expert trainers will help you with workout plan and give video support as well',
         icon: GiGymBag
     },
     {
         title: 'Diet plan',
-        desc: 'Our expert trainers with over 150 hours of education will work with you to create a custom plan',
+        desc: 'Our expert trainers will create a customized diet plan as per your need',
         icon: BiFoodMenu
     },
     {
         title: 'Training staff',
-        desc: 'Our expert trainers with over 150 hours of education will work with you to create a custom plan',
+        desc: 'Our training staff support will available 24*7 in case you need any help',
         icon: BsPeople
     },
     {
         title: 'Classes',
-        desc: 'Our expert trainers with over 150 hours of education will work with you to create a custom plan',
+        desc: 'Lectures will be there every weekend in which you can ask query, will check results and more',
         icon: MdOutlinePersonalVideo
     },
 ]
@@ -74,7 +74,7 @@ export default function Offer() {
             </Text>
             <Grid
                 templateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(2, 1fr)', xl: 'repeat(4, 1fr)' }}
-                gap={{base:'20px',md:'50px'}}
+                gap={{base:'10px',md:'50px'}}
                 zIndex='999'
                 justifyContent={'center'}
             >
