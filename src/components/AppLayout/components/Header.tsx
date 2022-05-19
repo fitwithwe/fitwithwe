@@ -21,6 +21,10 @@ const items = [
         link: '/pricing'
     },
     {
+        title: 'Transformations',
+        link: '/Transformation'
+    },
+    {
         title: 'About',
         link: '/about'
     },
@@ -99,7 +103,7 @@ export default function Header() {
                     letterSpacing={'4px'}
                     cursor='pointer'
                     onClick={() => {
-                        window.open(whatsapp_data.phone,"_self")
+                        window.open(whatsapp_data.phone, "_self")
                     }}
                     display={{ base: 'none', md: 'inherit' }}
                 >
@@ -114,7 +118,7 @@ export default function Header() {
                     letterSpacing={'4px'}
                     cursor='pointer'
                     onClick={() => {
-                        window.open(whatsapp_data.phone,"_self")
+                        window.open(whatsapp_data.phone, "_self")
                     }}
                     display={{ base: 'inherit', md: 'none' }}
                 >
