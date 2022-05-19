@@ -14,7 +14,8 @@ export default function MovingLine() {
     return (
         <Flex
             h='60px'
-            border={'1px solid #181818'}
+            borderTop={'1px solid #181818'}
+            borderBottom={'1px solid #181818'}
             alignItems='center'
             overflowX={'hidden'}
             wrap={'nowrap'}

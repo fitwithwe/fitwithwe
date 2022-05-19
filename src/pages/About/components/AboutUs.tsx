@@ -46,13 +46,13 @@ export default function AboutUs() {
                     lineHeight={{ base: '30px', sm: '40px', md: '50px', lg: '60px' }}
                     fontWeight={'600'}
                 >
-                    Your life is healthier & happier with FithWith.We.
+                    Your life is healthier & happier with FitWith.We.
                 </Text>
                 <Text
                     fontSize={{ base: '13px', sm: '14px', md: '15px', lg: '16px' }}
                     color={'#181818'}
                     my='16px'
-                    w='90%'
+                    w={{base:'100%',md:'90%'}}
                 >
                     Celebrating over 4 years in this industry, FithWith.We helps to transform lives every day through fitness. Offering a welcoming environment for members to achieve the results they’re looking for.
                 </Text>
