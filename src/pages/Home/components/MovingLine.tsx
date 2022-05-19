@@ -21,6 +21,7 @@ export default function MovingLine() {
             flexWrap='nowrap'
             letterSpacing={'2px'}
             fontSize='18px'
+            bgColor={'white'}
         >
             <Flex minW='100vw'>
                 <marquee>
