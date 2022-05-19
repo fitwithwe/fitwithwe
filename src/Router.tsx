@@ -2,6 +2,7 @@ import { Route, Redirect, Switch, BrowserRouter, } from 'react-router-dom'
 import { About } from './pages/About'
 import { Contact } from './pages/Contact'
 import { Home } from './pages/Home'
+import { Pricing } from './pages/Pricing'
 
 export default function Router() {
     return (
@@ -11,6 +12,7 @@ export default function Router() {
                     <Route exact path={"/home"} component={Home} />
                     <Route exact path={"/about"} component={About} />
                     <Route exact path={"/contact"} component={Contact} />
+                    <Route exact path={"/pricing"} component={Pricing} />
                     <Route path={"*"}>
                         <Redirect to={"/home"} />
                     </Route>
