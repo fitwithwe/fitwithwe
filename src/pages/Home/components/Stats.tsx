@@ -71,6 +71,7 @@ export default function Stats() {
                             style={{
                                 WebkitTextStroke: '1px white'
                             }}
+                            userSelect='none'
                         >
                             {row.ans}
                         </Flex>

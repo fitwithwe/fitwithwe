@@ -48,6 +48,7 @@ export default function Motivation() {
                             style={{
                                 WebkitTextStroke: '1px gray'
                             }}
+                            userSelect='none'
                         >
                             {row.num}
                         </Flex>

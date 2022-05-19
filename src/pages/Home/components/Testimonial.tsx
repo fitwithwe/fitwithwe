@@ -61,6 +61,7 @@ export default function Testimonial() {
                     style={{
                         WebkitTextStroke: '1px white'
                     }}
+                    userSelect='none'
                 >
                     {'“'}
                 </Flex>

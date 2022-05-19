@@ -44,12 +44,13 @@ export default function Offer() {
                 position={'absolute'}
                 opacity={0.1}
                 fontSize={'30vw'}
-                top='60%'
+                top={{base:'10%',md:'40%',lg:'60%'}}
                 color='transparent'
                 lineHeight={0}
                 style={{
                     WebkitTextStroke: '1px white'
                 }}
+                userSelect='none'
                 zIndex='1'
             >
                 SPORT
