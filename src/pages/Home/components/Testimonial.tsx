@@ -5,21 +5,29 @@ import { BsArrowLeft, BsArrowRight, BsFillPersonFill } from "react-icons/bs";
 
 const items = {
     1: {
-        name: 'Loreum Ipsum 1',
-        msg: 'Our office is something we are pleased with. We consider it the little magnet; it is wanting to come here and afterward difficult to leave it. Our office is additionally a big name.'
+        name: 'Heena sharma',
+        msg: "I had a cesarean around 10 months ago I Gained around 12 kgs of weight and was really worried what will happen with my child Vansh being a coach and acted more like a brother I was really impressed with the way he scheduled everything. I lost 9 kgs in last three months and am continuing my journey with him."
     },
     2: {
-        name: 'Loreum Ipsum 2',
-        msg: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        name: 'Vaibhav gaba',
+        msg: "Knowledge is a major power I had been into gymming since 2 years but I joined him and saw results in just 1 month I gained around 4 kgs a month and even had a muscular body shape with the help of his diet and workout plans. I am definitely taking his membership plan for the next whole year."
     },
     3: {
-        name: 'Loreum Ipsum 3',
-        msg: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters'
+        name: 'Rohan bhandari',
+        msg: "I had been 6 months under his guidance Had a full bulk to cut process once the results are like awesome am just waiting for my abs to pop out this month."
+    },
+    4: {
+        name: 'Purnima Mittal',
+        msg: "He is more of a freind and less of a coach he provided everything on call and then Aloted the trainers and then also keeps a Check over my routine himself. I lost around 7 kgs in 3 months seeing more and more in the further months."
+    },
+    5: {
+        name: 'Jasman Singh saluja',
+        msg: "The meal plans ohh yeah am eating protein ice creams making pancakes tastier than cakes recipies are nice and the trainers aloted listen your each and every query . Even the classes are really enduring where you meet different people with same goals."
     }
 }
 
 export default function Testimonial() {
-    const length = 3
+    const length = 4
     const [itemNum, setItemNum] = React.useState(1)
     const next = () => {
         if (itemNum + 1 <= length)
@@ -113,7 +121,7 @@ export default function Testimonial() {
                                 fontSize={{ base: '12px', sm: '13px', md: '14px', lg: '15px' }}
                                 color={'#3c8599'}
                             >
-                                CLIENT OF CLUB
+                                CLIENT OF FitWith.We
                             </Text>
                         </Flex>
                     </Flex>
