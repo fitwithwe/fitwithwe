@@ -24,6 +24,7 @@ export default function GetStarted() {
                 bgColor: 'black',
                 transition: '0.3s ease-in'
             }}
+            mt='20px'
         >
             <Text mr={'5px'}>Get Started</Text> <ArrowForwardIcon />
         </Flex>
