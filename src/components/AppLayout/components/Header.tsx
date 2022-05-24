@@ -21,10 +21,6 @@ const items = [
         link: '/pricing'
     },
     {
-        title: 'Transformations',
-        link: '/transformation'
-    },
-    {
         title: 'About',
         link: '/about'
     },

@@ -7,6 +7,7 @@ import Offer from "./components/Offer";
 import Stats from "../../components/Stats";
 import Testimonial from "./components/Testimonial";
 import { useHomeContext } from "./utils/context";
+import Transformation from "./components/Transformation";
 
 export default function HomeView() {
     const { count } = useHomeContext();
@@ -16,6 +17,7 @@ export default function HomeView() {
             <Motivation />
             <Offer/>
             <Stats />
+            <Transformation/>
             <Testimonial />
             <MovingLine />
         </Flex>
