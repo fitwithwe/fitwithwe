@@ -40,7 +40,7 @@ export default function Testimonial() {
     return (
         <Flex w='100%' direction={'column'} maxH='80vh' overflow={'hidden'} position='relative'>
             <Flex w='100%' display={{ base: 'none', md: 'inherit' }}>
-                <Image src="/bg2.jpeg" w='100%' />
+                <Image src="https://res.cloudinary.com/dis12nayi/image/upload/v1653380755/bg2_clqkoy.jpg" w='100%' />
             </Flex>
             <Flex
                 position={{ base: 'inherit', md: 'absolute' }}

@@ -9,7 +9,7 @@ export default function ContactView() {
         <Flex
             w='100%'
             direction={'column'}
-            bgImage={'url("/contactbg.jpeg")'}
+            bgImage={'url("https://res.cloudinary.com/dis12nayi/image/upload/v1653380755/contactbg_jtke4n.jpg")'}
             bgAttachment='fixed'
             bgSize={{base:'100vw 40vh',sm:'100vw 50vh',md:'100vw 60vh',lg:'100vw 70vh',xl:'100vw 80vh'}}
             bgRepeat='no-repeat'

@@ -7,10 +7,10 @@ export default function Banner() {
     return (
         <Flex position={'relative'}>
             <Flex w='65%' bgColor={'transparent'}>
-                <Image src="bg1.jpeg" w='100%' />
+                <Image src="https://res.cloudinary.com/dis12nayi/image/upload/v1653380754/bg1_uwgk9s.jpg" w='100%' />
             </Flex>
             <Flex w='35%' boxShadow={'-10px 0px 3px 0px #19191a'}>
-                <Image src="1.jpeg" w='100%' />
+                <Image src="https://res.cloudinary.com/dis12nayi/image/upload/v1653380755/1_yzucod.jpg" w='100%' />
             </Flex>
             <Flex
                 position={'absolute'}

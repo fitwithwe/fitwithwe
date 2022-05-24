@@ -22,7 +22,7 @@ export default function AboutUs() {
                 display={{ base: 'none', lg: 'inherit' }}
             >
                 <Flex w='80%'>
-                    <Image src="/2.jpeg" w='100%' />
+                    <Image src="https://res.cloudinary.com/dis12nayi/image/upload/v1653380755/2_vqsit2.jpg" w='100%' />
                 </Flex>
             </Flex>
             <Flex
@@ -86,7 +86,7 @@ export default function AboutUs() {
                         mt='50px'
                         justifyContent={'center'}
                     >
-                        <Image src="/2.jpeg" w='100%' />
+                        <Image src="https://res.cloudinary.com/dis12nayi/image/upload/v1653380756/website_xxohtk.jpg" w='100%' />
                     </Flex>
                 </Flex>
             </Flex>
